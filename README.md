@@ -41,7 +41,37 @@ If you have bug reports, feature suggestions, or want to get involved in develop
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install Dependencies
+
+Make sure you have [Node.js](https://nodejs.org/) v18 or later installed. Then run:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### 2. Configure Environment Variables
+
+Create a `.env.local` file in the root directory of the project:
+
+```bash
+touch .env.local
+```
+
+Then add your Financial Modeling Prep (FMP) API key like this:
+
+```bash
+NEXT_PUBLIC_FMP_API_KEY=your_actual_api_key_here
+```
+
+⚠️ Replace your_actual_api_key_here with your actual API key from your FMP account.
+
+### 3. Run the development server:
 
 ```bash
 npm run dev
