@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 
 async function fetchSectorPerformance() {
-  const url = `https://financialmodelingprep.com/api/v3/sector-performance?apikey=${process.env.NEXT_PUBLIC_FMP_API_KEY}`
+  const url = `https://financialmodelingprep.com/api/v3/sector-performance?apikey=${process.env.FMP_API_KEY}`
   const options = {
     method: "GET",
     next: {
